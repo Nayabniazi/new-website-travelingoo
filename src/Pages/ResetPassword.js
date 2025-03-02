@@ -43,16 +43,7 @@ function FullPageForm() {
         {/* Form */}
         <form onSubmit={handleSubmit} className="auth-form">
           {/* Email Field */}
-          <div className="form-field">
-            <label htmlFor="email"></label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-            />
-          </div>
+         
 
           {/* Password Field */}
           <div className="form-field">
@@ -66,6 +57,21 @@ function FullPageForm() {
             />
           </div>
 
+
+{/* Password Field */}
+<div className="form-field">
+            <label htmlFor="password"></label>
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Confirm your password"
+            />
+          </div>
+
+
+
           {/* Remember Me Checkbox */}
           <div className="checkbox-container">
             <input
@@ -78,27 +84,25 @@ function FullPageForm() {
           </div>
 
           {/* Forgot Password Link (inside the form) */}
-          <div className="forgot-password-link">
-            <p>
-              <a href="/forgot-password">Forgot Password?</a>
-            </p>
-          </div>
-          <Button type='submit'  className="btn" text="Sign in"/>
+         
+          <Button type='submit'  className="btn" text="Change"/>
           {/* Sign In Button */}
           
         </form>
 
         {/* Sign Up Link */}
+       
+
         <div className="signup-link">
           <p>
-            Don't have an account?{" "}
-            <a href="/signup">Sign up</a>
+           {" "}
+            <a href="/OTPForm">Verify Your OTP</a>
           </p>
         </div>
+
       </div>
     </div>
   );
 }
 
 export default FullPageForm;
-

@@ -27,14 +27,14 @@ const SignUp = () => {
           ← Back
         </button>
 
-        <div className="logo"style={{marginLeft:'130px'}}>
+        <div className="logoo"style={{marginLeft:'10px'}}>
           <img src='./imgs/loginlogo.png' alt="Logo" />
         </div>
 
         <h2>Forgot Password</h2>
 
         <form onSubmit={handleSubmit} className="auth-form">
-          <div className="form-group">
+          <div className="form-field">
             
             <input
               type="email"
@@ -45,11 +45,12 @@ const SignUp = () => {
            
           </div>
 
-          <Button type='submit'  className="btn" text="Sign up"/>
+          <Button type='submit'  className="btn" text="Continue"/>
         </form>
 
         <div className="links">
-          <Link to="/Login">Already have an account? Sign In</Link>
+         
+          <Link to="/ResetPassword">  You forgot your password?Reset Password</Link>
         </div>
       </div>
     </div>

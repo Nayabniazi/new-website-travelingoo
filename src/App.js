@@ -36,7 +36,8 @@ import Ski from "./Pages/Ski";
 import Platform from "./Pages/Platform";
 import Faqs from "./Pages/Faqs";
 import Bookingcars from "./Pages/Bookingcars";
-
+import ResetPassword from "./Pages/ResetPassword";
+import OTPForm from "./Pages/OTPForm";
 function App() {
   return (
     <>
@@ -77,7 +78,8 @@ function App() {
         <Route path="Login" element={<Login />} />
         <Route path="Faqs" element={<Faqs />} />
         <Route path="Bookingcars" element={<Bookingcars />} />
-       
+        <Route path="ResetPassword" element={<ResetPassword />} />
+        <Route path="OTPForm" element={<OTPForm />} />
       </Routes>
 
     </>
